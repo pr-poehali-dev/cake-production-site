@@ -129,6 +129,7 @@ const Index = () => {
           <h1 className="text-3xl font-serif font-bold text-accent">Confiserie Élégante</h1>
           <nav className="hidden md:flex gap-8">
             <a href="#catalog" className="hover:text-primary transition-colors">Каталог</a>
+            <a href="#printing" className="hover:text-primary transition-colors">Печать на тортах</a>
             <a href="#gallery" className="hover:text-primary transition-colors">Галерея</a>
             <a href="#reviews" className="hover:text-primary transition-colors">Отзывы</a>
             <a href="#delivery" className="hover:text-primary transition-colors">Доставка</a>
@@ -297,7 +298,155 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="gallery" className="py-16 px-4 bg-secondary/20">
+      <section id="printing" className="py-16 px-4 bg-secondary/20">
+        <div className="container mx-auto">
+          <h2 className="text-5xl font-serif font-bold text-center mb-6 text-accent">Фотопечать и сахарная печать</h2>
+          <p className="text-center text-muted-foreground text-lg max-w-3xl mx-auto mb-12">
+            Сделайте ваш торт по-настоящему уникальным с помощью съедобной печати
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <Card className="overflow-hidden border-0 bg-card/50 backdrop-blur-sm hover:shadow-xl transition-all duration-300 animate-scale-in">
+              <div className="relative h-64 overflow-hidden">
+                <img 
+                  src="https://cdn.poehali.dev/projects/eac10ee9-6c7e-4660-98c1-456770155eba/files/f98a170a-7887-49be-ad67-5bfecfdb1b93.jpg" 
+                  alt="Фотопечать на торте"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <CardContent className="p-6">
+                <div className="flex items-center gap-2 mb-3">
+                  <Icon name="Image" size={24} className="text-primary" />
+                  <h3 className="text-2xl font-serif font-semibold">Фотопечать</h3>
+                </div>
+                <p className="text-muted-foreground mb-4">
+                  Печать любого изображения на вафельной или сахарной бумаге. Идеально для фотографий близких, логотипов компаний и персональных дизайнов.
+                </p>
+                <ul className="space-y-2 mb-4 text-sm">
+                  <li className="flex items-center gap-2">
+                    <Icon name="Check" size={16} className="text-primary" />
+                    Высокое разрешение печати
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Icon name="Check" size={16} className="text-primary" />
+                    Безопасные пищевые красители
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Icon name="Check" size={16} className="text-primary" />
+                    Любой размер и форма
+                  </li>
+                </ul>
+                <div className="flex items-center justify-between">
+                  <span className="text-2xl font-serif font-bold text-primary">от 500 ₽</span>
+                  <Badge variant="outline">+ к стоимости торта</Badge>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="overflow-hidden border-0 bg-card/50 backdrop-blur-sm hover:shadow-xl transition-all duration-300 animate-scale-in" style={{ animationDelay: '100ms' }}>
+              <div className="relative h-64 overflow-hidden">
+                <img 
+                  src="https://cdn.poehali.dev/projects/eac10ee9-6c7e-4660-98c1-456770155eba/files/803e7ee1-6715-4be1-a525-8d16be40cc22.jpg" 
+                  alt="Сахарная печать"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <CardContent className="p-6">
+                <div className="flex items-center gap-2 mb-3">
+                  <Icon name="Sparkles" size={24} className="text-primary" />
+                  <h3 className="text-2xl font-serif font-semibold">Сахарная печать</h3>
+                </div>
+                <p className="text-muted-foreground mb-4">
+                  Премиальная печать на сахарной бумаге для самых изысканных дизайнов. Тонкая текстура идеально сливается с поверхностью торта.
+                </p>
+                <ul className="space-y-2 mb-4 text-sm">
+                  <li className="flex items-center gap-2">
+                    <Icon name="Check" size={16} className="text-primary" />
+                    Нежная текстура
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Icon name="Check" size={16} className="text-primary" />
+                    Яркие насыщенные цвета
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Icon name="Check" size={16} className="text-primary" />
+                    Премиум качество
+                  </li>
+                </ul>
+                <div className="flex items-center justify-between">
+                  <span className="text-2xl font-serif font-bold text-primary">от 800 ₽</span>
+                  <Badge variant="outline">+ к стоимости торта</Badge>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="overflow-hidden border-0 bg-card/50 backdrop-blur-sm hover:shadow-xl transition-all duration-300 animate-scale-in" style={{ animationDelay: '200ms' }}>
+              <div className="relative h-64 overflow-hidden">
+                <img 
+                  src="https://cdn.poehali.dev/projects/eac10ee9-6c7e-4660-98c1-456770155eba/files/1d05af77-e56d-4e87-ab85-7fc209012338.jpg" 
+                  alt="Индивидуальный дизайн"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <CardContent className="p-6">
+                <div className="flex items-center gap-2 mb-3">
+                  <Icon name="Palette" size={24} className="text-primary" />
+                  <h3 className="text-2xl font-serif font-semibold">Дизайн на заказ</h3>
+                </div>
+                <p className="text-muted-foreground mb-4">
+                  Не можете выбрать изображение? Наши дизайнеры создадут уникальный макет специально для вашего торта с учетом всех пожеланий.
+                </p>
+                <ul className="space-y-2 mb-4 text-sm">
+                  <li className="flex items-center gap-2">
+                    <Icon name="Check" size={16} className="text-primary" />
+                    Индивидуальная разработка
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Icon name="Check" size={16} className="text-primary" />
+                    3-4 варианта на выбор
+                  </li>
+                  <li className="flex items-center gap-2">
+                    <Icon name="Check" size={16} className="text-primary" />
+                    Правки до утверждения
+                  </li>
+                </ul>
+                <div className="flex items-center justify-between">
+                  <span className="text-2xl font-serif font-bold text-primary">от 1500 ₽</span>
+                  <Badge variant="outline">услуга дизайна</Badge>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="mt-12 text-center">
+            <Card className="max-w-3xl mx-auto p-8 border-0 bg-primary/5 backdrop-blur-sm">
+              <h3 className="text-2xl font-serif font-semibold mb-4 flex items-center justify-center gap-2">
+                <Icon name="Info" size={24} className="text-primary" />
+                Как заказать печать на торте
+              </h3>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+                <div>
+                  <div className="w-10 h-10 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold mb-3 mx-auto md:mx-0">1</div>
+                  <h4 className="font-semibold mb-2">Выберите торт</h4>
+                  <p className="text-sm text-muted-foreground">Любой торт из каталога можно дополнить печатью</p>
+                </div>
+                <div>
+                  <div className="w-10 h-10 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold mb-3 mx-auto md:mx-0">2</div>
+                  <h4 className="font-semibold mb-2">Пришлите изображение</h4>
+                  <p className="text-sm text-muted-foreground">Фото в высоком качестве или закажите дизайн у нас</p>
+                </div>
+                <div>
+                  <div className="w-10 h-10 rounded-full bg-primary text-primary-foreground flex items-center justify-center font-bold mb-3 mx-auto md:mx-0">3</div>
+                  <h4 className="font-semibold mb-2">Получите торт</h4>
+                  <p className="text-sm text-muted-foreground">Доставим готовый торт с вашим дизайном</p>
+                </div>
+              </div>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery" className="py-16 px-4 bg-background">
         <div className="container mx-auto">
           <h2 className="text-5xl font-serif font-bold text-center mb-12 text-accent">Галерея наших работ</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">

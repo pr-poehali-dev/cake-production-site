@@ -534,7 +534,7 @@ const Index = () => {
             <div className="space-y-4">
               <div className="flex items-center justify-center gap-3">
                 <Icon name="Phone" size={20} className="text-primary" />
-                <a href="tel:+79001234567" className="text-lg hover:text-primary transition-colors">+7 (900) 123-45-67</a>
+                <a href="tel:444555666" className="text-lg hover:text-primary transition-colors">444-555-666</a>
               </div>
               <div className="flex items-center justify-center gap-3">
                 <Icon name="Mail" size={20} className="text-primary" />
@@ -542,7 +542,7 @@ const Index = () => {
               </div>
               <div className="flex items-center justify-center gap-3">
                 <Icon name="MapPin" size={20} className="text-primary" />
-                <p className="text-lg">г. Москва, ул. Кондитерская, 15</p>
+                <p className="text-lg">г. Усть-Лабинск</p>
               </div>
               <div className="flex items-center justify-center gap-3">
                 <Icon name="Clock" size={20} className="text-primary" />

@@ -130,6 +130,7 @@ const Index = () => {
           <nav className="hidden md:flex gap-8">
             <a href="#catalog" className="hover:text-primary transition-colors">Каталог</a>
             <a href="#printing" className="hover:text-primary transition-colors">Печать на тортах</a>
+            <a href="#substrates" className="hover:text-primary transition-colors">Подложки</a>
             <a href="#gallery" className="hover:text-primary transition-colors">Галерея</a>
             <a href="#reviews" className="hover:text-primary transition-colors">Отзывы</a>
             <a href="#delivery" className="hover:text-primary transition-colors">Доставка</a>
@@ -446,7 +447,253 @@ const Index = () => {
         </div>
       </section>
 
-      <section id="gallery" className="py-16 px-4 bg-background">
+      <section id="substrates" className="py-16 px-4 bg-background">
+        <div className="container mx-auto">
+          <h2 className="text-5xl font-serif font-bold text-center mb-6 text-accent">Подложки для тортов</h2>
+          <p className="text-center text-muted-foreground text-lg max-w-3xl mx-auto mb-12">
+            Красивая подача – важная часть торта. Выберите подложку под стиль вашего праздника
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-6 max-w-7xl mx-auto">
+            <Card className="overflow-hidden border-0 bg-card/50 backdrop-blur-sm hover:shadow-xl transition-all duration-300 animate-scale-in">
+              <div className="relative h-48 overflow-hidden bg-gradient-to-br from-yellow-100 to-yellow-200 flex items-center justify-center">
+                <img 
+                  src="https://cdn.poehali.dev/projects/eac10ee9-6c7e-4660-98c1-456770155eba/files/ad7db655-8dd5-40e3-bf66-9a80bf3e5c41.jpg" 
+                  alt="Золотая подложка"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <CardContent className="p-5">
+                <h3 className="text-xl font-serif font-semibold mb-2">Золотая подложка</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Классика для торжественных мероприятий
+                </p>
+                <div className="space-y-2 text-xs mb-3">
+                  <p className="flex items-center gap-2">
+                    <Icon name="CircleDot" size={12} className="text-primary" />
+                    Диаметр: 26, 30, 35 см
+                  </p>
+                  <p className="flex items-center gap-2">
+                    <Icon name="CircleDot" size={12} className="text-primary" />
+                    Плотный картон
+                  </p>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span className="text-xl font-serif font-bold text-primary">150 ₽</span>
+                  <Badge variant="outline" className="text-xs">Круглая</Badge>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="overflow-hidden border-0 bg-card/50 backdrop-blur-sm hover:shadow-xl transition-all duration-300 animate-scale-in" style={{ animationDelay: '50ms' }}>
+              <div className="relative h-48 overflow-hidden bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
+                <div className="w-32 h-32 bg-white/80 rounded-full border-4 border-gray-300"></div>
+              </div>
+              <CardContent className="p-5">
+                <h3 className="text-xl font-serif font-semibold mb-2">Серебряная подложка</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Элегантное решение для любого торта
+                </p>
+                <div className="space-y-2 text-xs mb-3">
+                  <p className="flex items-center gap-2">
+                    <Icon name="CircleDot" size={12} className="text-primary" />
+                    Диаметр: 26, 30, 35 см
+                  </p>
+                  <p className="flex items-center gap-2">
+                    <Icon name="CircleDot" size={12} className="text-primary" />
+                    Плотный картон
+                  </p>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span className="text-xl font-serif font-bold text-primary">150 ₽</span>
+                  <Badge variant="outline" className="text-xs">Круглая</Badge>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="overflow-hidden border-0 bg-card/50 backdrop-blur-sm hover:shadow-xl transition-all duration-300 animate-scale-in" style={{ animationDelay: '100ms' }}>
+              <div className="relative h-48 overflow-hidden bg-gradient-to-br from-white to-gray-50 flex items-center justify-center">
+                <div className="w-32 h-32 bg-white border-2 border-gray-300 shadow-lg rounded-full"></div>
+              </div>
+              <CardContent className="p-5">
+                <h3 className="text-xl font-serif font-semibold mb-2">Белая подложка</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Универсальная основа для минимализма
+                </p>
+                <div className="space-y-2 text-xs mb-3">
+                  <p className="flex items-center gap-2">
+                    <Icon name="CircleDot" size={12} className="text-primary" />
+                    Диаметр: 26, 30, 35 см
+                  </p>
+                  <p className="flex items-center gap-2">
+                    <Icon name="CircleDot" size={12} className="text-primary" />
+                    Плотный картон
+                  </p>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span className="text-xl font-serif font-bold text-primary">120 ₽</span>
+                  <Badge variant="outline" className="text-xs">Круглая</Badge>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="overflow-hidden border-0 bg-card/50 backdrop-blur-sm hover:shadow-xl transition-all duration-300 animate-scale-in" style={{ animationDelay: '150ms' }}>
+              <div className="relative h-48 overflow-hidden bg-gradient-to-br from-yellow-50 to-yellow-100 flex items-center justify-center">
+                <div className="w-32 h-24 bg-gradient-to-br from-yellow-200 to-yellow-300 border-2 border-yellow-400 shadow-lg"></div>
+              </div>
+              <CardContent className="p-5">
+                <h3 className="text-xl font-serif font-semibold mb-2">Золотая прямоугольная</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Для прямоугольных и квадратных тортов
+                </p>
+                <div className="space-y-2 text-xs mb-3">
+                  <p className="flex items-center gap-2">
+                    <Icon name="CircleDot" size={12} className="text-primary" />
+                    Размер: 30×40, 35×45 см
+                  </p>
+                  <p className="flex items-center gap-2">
+                    <Icon name="CircleDot" size={12} className="text-primary" />
+                    Плотный картон
+                  </p>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span className="text-xl font-serif font-bold text-primary">180 ₽</span>
+                  <Badge variant="outline" className="text-xs">Прямоугольная</Badge>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="overflow-hidden border-0 bg-card/50 backdrop-blur-sm hover:shadow-xl transition-all duration-300 animate-scale-in" style={{ animationDelay: '200ms' }}>
+              <div className="relative h-48 overflow-hidden bg-gradient-to-br from-pink-50 to-pink-100 flex items-center justify-center">
+                <div className="w-32 h-32 bg-gradient-to-br from-pink-200 to-pink-300 rounded-full border-2 border-pink-400"></div>
+              </div>
+              <CardContent className="p-5">
+                <h3 className="text-xl font-serif font-semibold mb-2">Розовая подложка</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Нежная подача для детских тортов
+                </p>
+                <div className="space-y-2 text-xs mb-3">
+                  <p className="flex items-center gap-2">
+                    <Icon name="CircleDot" size={12} className="text-primary" />
+                    Диаметр: 26, 30, 35 см
+                  </p>
+                  <p className="flex items-center gap-2">
+                    <Icon name="CircleDot" size={12} className="text-primary" />
+                    Плотный картон
+                  </p>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span className="text-xl font-serif font-bold text-primary">150 ₽</span>
+                  <Badge variant="outline" className="text-xs">Круглая</Badge>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="overflow-hidden border-0 bg-card/50 backdrop-blur-sm hover:shadow-xl transition-all duration-300 animate-scale-in" style={{ animationDelay: '250ms' }}>
+              <div className="relative h-48 overflow-hidden bg-gradient-to-br from-blue-50 to-blue-100 flex items-center justify-center">
+                <div className="w-32 h-32 bg-gradient-to-br from-blue-200 to-blue-300 rounded-full border-2 border-blue-400"></div>
+              </div>
+              <CardContent className="p-5">
+                <h3 className="text-xl font-serif font-semibold mb-2">Голубая подложка</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Для детских праздников
+                </p>
+                <div className="space-y-2 text-xs mb-3">
+                  <p className="flex items-center gap-2">
+                    <Icon name="CircleDot" size={12} className="text-primary" />
+                    Диаметр: 26, 30, 35 см
+                  </p>
+                  <p className="flex items-center gap-2">
+                    <Icon name="CircleDot" size={12} className="text-primary" />
+                    Плотный картон
+                  </p>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span className="text-xl font-serif font-bold text-primary">150 ₽</span>
+                  <Badge variant="outline" className="text-xs">Круглая</Badge>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="overflow-hidden border-0 bg-card/50 backdrop-blur-sm hover:shadow-xl transition-all duration-300 animate-scale-in" style={{ animationDelay: '300ms' }}>
+              <div className="relative h-48 overflow-hidden bg-gradient-to-br from-purple-50 to-purple-100 flex items-center justify-center">
+                <div className="w-32 h-32 bg-gradient-to-br from-purple-200 to-purple-300 rounded-full border-2 border-purple-400"></div>
+              </div>
+              <CardContent className="p-5">
+                <h3 className="text-xl font-serif font-semibold mb-2">Фиолетовая подложка</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Яркое оформление для торжества
+                </p>
+                <div className="space-y-2 text-xs mb-3">
+                  <p className="flex items-center gap-2">
+                    <Icon name="CircleDot" size={12} className="text-primary" />
+                    Диаметр: 26, 30, 35 см
+                  </p>
+                  <p className="flex items-center gap-2">
+                    <Icon name="CircleDot" size={12} className="text-primary" />
+                    Плотный картон
+                  </p>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span className="text-xl font-serif font-bold text-primary">150 ₽</span>
+                  <Badge variant="outline" className="text-xs">Круглая</Badge>
+                </div>
+              </CardContent>
+            </Card>
+
+            <Card className="overflow-hidden border-0 bg-card/50 backdrop-blur-sm hover:shadow-xl transition-all duration-300 animate-scale-in" style={{ animationDelay: '350ms' }}>
+              <div className="relative h-48 overflow-hidden bg-gradient-to-br from-red-50 to-red-100 flex items-center justify-center">
+                <div className="w-32 h-32 bg-gradient-to-br from-red-200 to-red-300 rounded-full border-2 border-red-400"></div>
+              </div>
+              <CardContent className="p-5">
+                <h3 className="text-xl font-serif font-semibold mb-2">Красная подложка</h3>
+                <p className="text-sm text-muted-foreground mb-3">
+                  Для ярких праздничных тортов
+                </p>
+                <div className="space-y-2 text-xs mb-3">
+                  <p className="flex items-center gap-2">
+                    <Icon name="CircleDot" size={12} className="text-primary" />
+                    Диаметр: 26, 30, 35 см
+                  </p>
+                  <p className="flex items-center gap-2">
+                    <Icon name="CircleDot" size={12} className="text-primary" />
+                    Плотный картон
+                  </p>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span className="text-xl font-serif font-bold text-primary">150 ₽</span>
+                  <Badge variant="outline" className="text-xs">Круглая</Badge>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="mt-12 text-center">
+            <Card className="max-w-3xl mx-auto p-8 border-0 bg-primary/5 backdrop-blur-sm">
+              <div className="flex items-center justify-center gap-3 mb-4">
+                <Icon name="Info" size={24} className="text-primary" />
+                <h3 className="text-2xl font-serif font-semibold">Важная информация</h3>
+              </div>
+              <div className="text-left space-y-3 text-muted-foreground">
+                <p className="flex items-start gap-2">
+                  <Icon name="Check" size={18} className="text-primary mt-1 flex-shrink-0" />
+                  Подложка входит в стоимость каждого торта (стандартная белая или золотая)
+                </p>
+                <p className="flex items-start gap-2">
+                  <Icon name="Check" size={18} className="text-primary mt-1 flex-shrink-0" />
+                  Цветные и специальные подложки заказываются дополнительно
+                </p>
+                <p className="flex items-start gap-2">
+                  <Icon name="Check" size={18} className="text-primary mt-1 flex-shrink-0" />
+                  Для многоярусных тортов подложка для каждого яруса оплачивается отдельно
+                </p>
+              </div>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery" className="py-16 px-4 bg-secondary/20">
         <div className="container mx-auto">
           <h2 className="text-5xl font-serif font-bold text-center mb-12 text-accent">Галерея наших работ</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
